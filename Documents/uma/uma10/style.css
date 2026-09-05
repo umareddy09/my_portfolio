@@ -1,0 +1,181 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#0f172a;
+padding:20px;
+position:sticky;
+top:0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:90%;
+margin:auto;
+}
+
+.logo{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+.home{
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:80px 10%;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+}
+
+.home img{
+width:300px;
+height:300px;
+border-radius:50%;
+border:5px solid white;
+}
+
+.home h1{
+font-size:50px;
+}
+
+.home span{
+color:#ffeb3b;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:white;
+color:#2563eb;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+}
+
+.btn:hover{
+background:#ffeb3b;
+}
+
+section{
+padding:60px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:30px;
+font-size:35px;
+color:#2563eb;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+font-weight:bold;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#2563eb;
+color:white;
+}
+
+.box,.project{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-left:5px solid #2563eb;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.icons p{
+margin:15px 0;
+font-size:18px;
+}
+
+.icons a{
+text-decoration:none;
+color:#2563eb;
+}
+
+.icons i{
+margin-right:10px;
+font-size:22px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.home{
+flex-direction:column;
+text-align:center;
+}
+
+.home img{
+margin-top:30px;
+width:220px;
+height:220px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav ul li{
+margin:10px;
+}
+
+}
